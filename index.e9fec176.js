@@ -1,0 +1,2 @@
+var isNavExpanded=!1;function toggleMenu(){isNavExpanded=!isNavExpanded;var e=document.querySelector(".hamburger-icon"),s=document.querySelector(".close-icon"),l=document.querySelector(".small-screen-nav-list-wrapper");isNavExpanded?(e.style.display="none",s.style.display="block",l.style.display="block",l.classList.add("slide-from-right"),l.classList.remove("slide-from-left")):(e.style.display="block",s.style.display="none",l.classList.remove("slide-from-right"),l.classList.add("slide-from-left"))}
+//# sourceMappingURL=index.e9fec176.js.map
