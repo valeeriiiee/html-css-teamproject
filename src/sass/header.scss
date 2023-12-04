@@ -161,6 +161,8 @@ body {
 
     .small-screen-nav-list-wrapper {
         display: none !important;
+        overflow: hidden;
+        height: 100vh;
     }
 
     .logo {

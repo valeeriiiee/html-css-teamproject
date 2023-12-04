@@ -154,9 +154,11 @@
     background-color: #FFF;
 }
 
-// RESPONSIVENESS
 
-@media (max-width:768px) {
+// RESPONSIVENESS
+// TABLET
+
+@media screen and (max-width:768px) {
     .container {
         width: 768px;
     }
@@ -171,6 +173,18 @@
     }
 }
 
-@media (max-width:375px) {
-    
+// MOBILE
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 375px;
+    }
+
+    .fruits-section-item {
+        width: 325px;
+    }
+
+    .plum, .orange {
+       display: none; 
+    }
 }
