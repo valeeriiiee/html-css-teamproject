@@ -161,7 +161,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
+    position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
@@ -173,7 +173,7 @@
     background-color: #FFF;
     width: 891px;
     border-radius: 20px;
-    position: fixed;
+    position: sticky;
     top: 5px;
     align-items: center;
     justify-content: center;
@@ -202,27 +202,41 @@
     opacity: 0;
 }
 
-.strawberry-basket {
-    width: 257px;
-    background-color: #F8766B;
-    position: relative;
-    border-radius: 20px;
+.fruits-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
 }
 
-.unchecked {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-}
-
-.checkbox {
+.select-checkbox {
+    opacity: 0;
     display: block;
     position: absolute;
     top: 14px;
     right: 14px;
     height: 20px;
-    width: 20px
+    width: 20px;
+    z-index: 1;
 }
+
+.check-select {
+    fill: none;
+    border: 3px solid #FFF;
+    border-radius: 4px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    transition: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fruits-select .select-checkbox:checked + .check-select {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    stroke-width: 0.2;
+  }
 
 .fruits-menu-name {
     color: #FFF;
@@ -248,12 +262,105 @@
     padding-left: 20px;
 }
 
-.fruits-menu-image {
+.strawberry-basket-image {
     margin-left: 42px;
     margin-right: 42px;
     margin-bottom: 14px;
 }
 
+.strawberry-basket {
+    width: 257px;
+    background-color: #F8766B;
+    position: relative;
+    border-radius: 20px;
+}
+
+.apples-basket {
+    width: 257px;
+    background-color: #EDD251;
+    position: relative;
+    border-radius: 20px;
+}
+
+.apples-basket-image {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+
+.fruits-basket {
+    width: 257px;
+    background-color: #9DC262;
+    position: relative;
+    border-radius: 20px;
+}
+
+.fruits-basket-image {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+
+.service-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    position: relative;
+    left: 40px;
+    margin-top: 0;
+  }
+
+.service-input-textarea {
+    width: 360px;
+    border-radius: 100px;
+    border: 1px solid #000;
+    opacity: 0.3;
+    padding: 15px 24px;
+    color: #000;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+  }
+
+  .comment-input {
+    width: 360px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    opacity: 0.3;
+    padding: 15px 24px;
+    color: #000;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+  }
+
+  .banana-girl {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+  }
+
+  .submit-button {
+    border-radius: 100px;
+    background: #9DC162;
+    border-color: transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    padding: 15px 35px;
+    margin-left: 40px;
+    margin-bottom: 55px;
+  }
+
+  .submit-button:hover, .submit-button:focus {
+    cursor: pointer;
+  }
 // RESPONSIVENESS
 // TABLET
 
