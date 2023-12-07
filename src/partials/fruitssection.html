@@ -2,7 +2,7 @@
 <html lang="en">
 <body>
     <!-- FRUITS SECTION -->
-    <section class="fruits-section">
+    <section class="fruits-section container">
         <h3 class="fruits-section-header">ORGANIC FRUITS</h3>
         <p class="fruits-section-description">
             Our organic fruits are hand-picked from local farms and delivered straight to your doorstep, <br> 
@@ -129,13 +129,28 @@
 
         <!-- ORDER FORM MODAL -->
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-close-button" data-modal-close>
-            <svg class="button-svg" width="18" height="18">
-              <use href="./images/icons.svg#close-1"></use>
-            </svg>
-          </button>
-          </div>
+        <div class="order-modal">
+            <button type="button" class="order-close-button" data-modal-close>
+              <svg class="button-svg" width="28" height="28">
+                <use href="./images/icons.svg#close-1"></use>
+              </svg>
+            </button>
+            <h3 class="order-modal-header">YOUR ORDER</h3>
+            <ul class="fruits-menu list">
+              <li class="fruits-menu-item strawberry-basket">
+                <input type="checkbox" id="strawberrybasket" class="checkbox">
+                <label for="strawberrybasket" class="checkbox-label">
+                  <svg class="unchecked" width="20" height="20">
+                    <use href="./images/icons.svg#uncheckedbox"></use>
+                  </svg>
+                </label>
+                  <h5 class="fruits-menu-name">Strawberry Basket</h5>
+                  <p class="fruits-menu-description">Plant</p>
+                <img src="./images/strawberrybasket.png" alt="strawberry basket" class="fruits-menu-image" width="173px"/>
+              </li>
+            </ul>
+        </div>
+      </div>
     </section>
 </body>
 </html>
