@@ -2,7 +2,7 @@
 <html lang="en">
 <body>
     <!-- FRUITS SECTION -->
-    <section class="fruits-section">
+    <section class="fruits-section container">
         <h3 class="fruits-section-header">ORGANIC FRUITS</h3>
         <p class="fruits-section-description">
             Our organic fruits are hand-picked from local farms and delivered straight to your doorstep, <br> 
@@ -121,24 +121,35 @@
             </li>
         </ul>
         </div>
-        <button type="button" class="order-button data-modal-open" >
+        <button type="button" class="order-button" data-modal-open>
           <svg class="button-svg" width="14" height="14">
             <use href="./images/icons.svg#arrow"></use>
           </svg>
         ORDER</button>
 
         <!-- ORDER FORM MODAL -->
-      <div class="backdrop is-hidden">
-        <div class="modal">
-          <div class="order-modal data-modal">
-            <button type="button" class="order-close-button data-modal-close">
+      <div class="backdrop is-hidden" data-modal>
+        <div class="order-modal">
+            <button type="button" class="order-close-button" data-modal-close>
               <svg class="button-svg" width="28" height="28">
                 <use href="./images/icons.svg#close-1"></use>
               </svg>
             </button>
             <h3 class="order-modal-header">YOUR ORDER</h3>
-          </div>
-         </div>
+            <ul class="fruits-menu list">
+              <li class="fruits-menu-item strawberry-basket">
+                <input type="checkbox" id="strawberrybasket" class="checkbox">
+                <label for="strawberrybasket" class="checkbox-label">
+                  <svg class="unchecked" width="20" height="20">
+                    <use href="./images/icons.svg#uncheckedbox"></use>
+                  </svg>
+                </label>
+                  <h5 class="fruits-menu-name">Strawberry Basket</h5>
+                  <p class="fruits-menu-description">Plant</p>
+                <img src="./images/strawberrybasket.png" alt="strawberry basket" class="fruits-menu-image" width="173px"/>
+              </li>
+            </ul>
+        </div>
       </div>
     </section>
 </body>
