@@ -129,80 +129,105 @@
 
         <!-- ORDER FORM MODAL -->
       <div class="backdrop is-hidden" data-modal>
-        <div class="order-modal">
+        <div class="order-modal modal-container">
             <button type="button" class="order-close-button" data-modal-close>
               <svg class="button-svg" width="28" height="28">
                 <use href="./images/icons.svg#close-1"></use>
               </svg>
             </button>
             <h3 class="order-modal-header">YOUR ORDER</h3>
-            <ul class="fruits-menu list">
-              <li class="fruits-menu-item strawberry-basket">
-                <label for="strawberrybasket" class="fruits-select">
-                  <input type="checkbox" name="strawberrybasket" class="select-checkbox">
-                  <svg class="check-select" width="20" height="20">
-                    <use href="./images/icons.svg#check"></use>
-                  </svg>
+            <div class="order-form">
+              <ul class="fruits-menu list">
+                <li class="fruits-menu-item strawberry-basket">
+                  <label for="strawberrybasket" class="fruits-select">
+                    <input type="checkbox" name="strawberrybasket" class="select-checkbox">
+                    <svg class="check-select" width="20" height="20">
+                      <use href="./images/icons.svg#check"></use>
+                    </svg>
+                  </label>
+                    <div class="fruits-menu-title">
+                      <h5 class="fruits-menu-name">Strawberry Basket</h5>
+                      <p class="fruits-menu-description">Plant</p>
+                    </div>
+                    <img src="./images/strawberrybasket.png" alt="strawberry basket" class="strawberry-basket-image" width="173px"/>
+                </li>
+                <li class="fruits-menu-item apples-basket">
+                  <label for="applebasket" class="fruits-select">
+                    <input type="checkbox" name="applesbasket" class="select-checkbox">
+                    <svg class="check-select" width="20" height="20">
+                      <use href="./images/icons.svg#check"></use>
+                    </svg>
+                  </label>
+                  <div class="fruits-menu-title">
+                    <h5 class="fruits-menu-name">Apple Basket</h5>
+                    <p class="fruits-menu-description">Plant</p>
+                  </div>
+                  <img src="./images/applesbasket.png" alt="apples basket" class="apples-basket-image" width="229px"/>
+                </li>
+                <li class="fruits-menu-item fruits-basket">
+                  <label for="fruitsbasket" class="fruits-select">
+                    <input type="checkbox" name="fruitsbasket" class="select-checkbox">
+                    <svg class="check-select" width="20" height="20">
+                      <use href="./images/icons.svg#check"></use>
+                    </svg>
+                  </label>
+                  <div class="fruits-menu-title">
+                    <h5 class="fruits-menu-name">Fruits Basket</h5>
+                    <p class="fruits-menu-description">Plant</p>
+                  </div>
+                  <img src="./images/fruitsbasket.png" alt="fruits basket" class="fruits-basket-image" width="229px"/>
+                </li>
+              </ul>
+              <form class="order-service-form">
+                <label for="name" class="service-label">
+                  <textarea
+                    class="service-input-textarea service-input"
+                    rows="1"
+                    placeholder="Enter full name..."
+                  ></textarea>
                 </label>
-                  <h5 class="fruits-menu-name">Strawberry Basket</h5>
-                  <p class="fruits-menu-description">Plant</p>
-                <img src="./images/strawberrybasket.png" alt="strawberry basket" class="strawberry-basket-image" width="173px"/>
-              </li>
-              <li class="fruits-menu-item apples-basket">
-                <label for="applebasket" class="fruits-select">
-                  <input type="checkbox" name="applesbasket" class="select-checkbox">
-                  <svg class="check-select" width="20" height="20">
-                    <use href="./images/icons.svg#check"></use>
-                  </svg>
+                <label for="email" class="service-label">
+                  <textarea
+                    class="service-input-textarea service-input"
+                    rows="1"
+                    placeholder="Enter email..."
+                  ></textarea>
                 </label>
-                  <h5 class="fruits-menu-name">Apple Basket</h5>
-                  <p class="fruits-menu-description">Plant</p>
-                <img src="./images/applesbasket.png" alt="apples basket" class="apples-basket-image" width="229px"/>
-              </li>
-              <li class="fruits-menu-item fruits-basket">
-                <label for="fruitsbasket" class="fruits-select">
-                  <input type="checkbox" name="fruitsbasket" class="select-checkbox">
-                  <svg class="check-select" width="20" height="20">
-                    <use href="./images/icons.svg#check"></use>
-                  </svg>
+                <label for="card" class="service-label">
+                   <textarea
+                     class="service-input-textarea service-input"
+                     rows="1"
+                     placeholder="Enter card.."
+                   ></textarea>
                 </label>
-                  <h5 class="fruits-menu-name">Fruits Basket</h5>
-                  <p class="fruits-menu-description">Plant</p>
-                <img src="./images/fruitsbasket.png" alt="fruits basket" class="fruits-basket-image" width="229px"/>
-              </li>
-            </ul>
-            <form class="order-form">
-              <label for="name" class="service-label">
-                <textarea
-                  class="service-input-textarea service-input"
-                  rows="1"
-                  placeholder="Enter full name..."
-                ></textarea>
-              </label>
-              <label for="email" class="service-label">
-                <textarea
-                  class="service-input-textarea service-input"
-                  rows="1"
-                  placeholder="Enter email..."
-                ></textarea>
-              </label>
-              <label for="card" class="service-label">
-                 <textarea
-                   class="service-input-textarea service-input"
-                   rows="1"
-                   placeholder="Enter card.."
-                 ></textarea>
-              </label>
-              <label for="comments" class="service-label">
-                <textarea
-                  class="comment-input"
-                  rows="4"
-                  placeholder="Enter comments..."
-                ></textarea>
-             </label>
-            </form>
-            <img src="./images/bananagirl.png" alt="girl holding bananas" class="banana-girl" width="471px"/>
-            <button type="submit" class="submit-button" data-modal-open>Submit</button>
+                <label for="comments" class="service-label">
+                  <textarea
+                    class="comment-input"
+                    rows="4"
+                    placeholder="Enter comments..."
+                  ></textarea>
+               </label>
+              </form>
+              <img src="./images/bananagirl.png" alt="girl holding bananas" class="banana-girl" width="471px"/>
+              <button type="submit" class="submit-button" data-modal-submit ty-modal-open>Submit</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- THANK YOU MODAL -->
+      <div class="screen-protector is-hidden" ty-modal>
+        <div class="ty-modal">
+            <button type="button" class="ty-close-button" ty-modal-close>
+              <svg class="button-svg" width="28" height="28">
+                <use href="./images/icons.svg#close-2"></use>
+              </svg>
+            </button>
+            <img src="./images/raspberry.png" alt="raspberry" class="raspberry-image" width="278px"/>
+            <h3 class="ty-modal-header">THANK YOU</h3>
+            <p class="ty-message">Thank you for your order! Our team is preparing your box with 
+                                  fresh, delicious fruits and vegetables, and we'll deliver it straight to 
+                                  your doorstep. We appreciate your business and look forward to 
+                                  providing you with the best possible experience!</p>
         </div>
       </div>
     </section>
