@@ -19,8 +19,9 @@ body {
 }
 
 .p1 {
+    width: 740px;
     position: absolute;
-    top: -120px;
+    top: -130px;
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
@@ -131,9 +132,11 @@ body {
     }
 
     .p1 {
+        width: 648px;
         font-size: 54px;
         line-height: 54px;
         letter-spacing: -2.16px;
+        top: -110px;
     }
 
     .responsive-image {
