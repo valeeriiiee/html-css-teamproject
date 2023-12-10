@@ -180,6 +180,7 @@
     top: 5px;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
 .order-close-button {
@@ -392,6 +393,7 @@
     right: 20px;
     color: #FFF;
     text-align: center;
+    z-index: 5;
 }
 
 .ty-close-button {
