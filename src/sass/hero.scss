@@ -6,6 +6,7 @@
     min-height: 100vh;
     margin: 0;
     position: relative;
+    margin-bottom: 350px;
 }
 
 // HERO SECTION
@@ -44,7 +45,7 @@
     width: 110px;
     height: 110px;
     flex-shrink: 0;
-    background: url('') rgba(174, 19, 50, 0) 50%/ cover no-repeat;
+    background: rgba(174, 19, 50, 0) 50%/ cover no-repeat;
     filter: blur(2.5px);
     top: -45px;
     right: 65px;
@@ -58,7 +59,7 @@
     height: 9.78831rem;
     transform: rotate(10deg);
     flex-shrink: 0;
-    background: url(''),rgba(174, 19, 50, 0) 50%/ cover no-repeat;
+    background: rgba(174, 19, 50, 0) 50%/ cover no-repeat;
     filter: blur(1px);
     top: 90px;
     left: 50px;
@@ -297,13 +298,19 @@
     margin: 0.2rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 768px) {
+
+    .hero-section {
+        width: 767px;
+    }
 
     .tagline-container {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        width: 767px;
+        margin-bottom: 830px;
     }
 
     .tagline {
@@ -329,6 +336,8 @@
         width: 80%;
     }
 
+    
+
     .center_orange_girl {
         width: 90%;
     }
@@ -351,11 +360,17 @@
     }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 375px) {
+
+    .hero-section {
+        width: 374px;
+        margin: 0 0 790px 0;
+    }
 
     .tagline {
         display: none;
     }
+    
 
     .tagline_smallerscreen {
         color: #FFF;
@@ -404,14 +419,14 @@
     .orangegirl_smallerscreen {
         margin-top: -100px;
         margin-right: -150px;
-        display: inline-block;
+        display: flex;
         border-radius: 500px;
     }
 
     .orangegirl_outline {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 190px;
+        left: 155px;
         transform: translate(-50%, -50%);
         margin-top: -50px;
         width: 330px;
@@ -420,41 +435,56 @@
 
     .shop_now {
         margin-bottom: -11rem;
+        bottom: 130px;
+        left: 160px;
     }
 
     .aside_left_container {
-        margin-top: 21rem;
         left: 50%;
         margin-left: -7.5rem;
+        top: 750px;
     }
 
     .aside_left {
-        width: 18rem;;
+        width: 18rem;
+
     }
 
     .aside_right_container {
-        margin-top: 60rem;
+        margin-top: 28rem;
         right: 50%;
-        margin-right: -7.5rem;
+        margin-right: -8.5rem;
     }
 
     .aside_right_yellowbox {
-        margin-top: 8rem;
+        margin-top: 12rem;
     }
 
     .hero_hastags {
+        width: 374px;
         position: absolute;
         top: 0;
-        left: 0;
         z-index: 2;
+        right: 50px;
+        margin-bottom: 54px;
+    }
+
+    .hero-hashtags {
+        width: 374px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .tags {
-        width: 4rem;
+        width: 132px;
+        height: 48px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-basis: calc(100% / 2 - 8px);
     }
 }
