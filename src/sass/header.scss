@@ -134,6 +134,12 @@ body {
     animation: slideLeftToRight 250ms ease-in-out forwards;
 }
 
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 767px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .hamburger-icon {
         display: block;
