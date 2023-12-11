@@ -8,6 +8,7 @@ body {
 
 .sendemail-section {
     position: relative;
+    margin-bottom: 150px;
 }
 
 .sendemail-container {
@@ -177,6 +178,10 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+    .sendemail-section {
+        margin-bottom: 80px;
+    }
+
     .sendemail-container {
         width: 374px;
     }
